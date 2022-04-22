@@ -60,10 +60,13 @@ Password (again): *********
 Superuser created successfully.
 ```
 
+Now, open a web browser and go to “/admin/” on your local domain – e.g., http://127.0.0.1:8000/admin/.
+
+
 ### Báo cáo LaTeX
 https://www.overleaf.com/read/hhzhfvjhppys
 
-### Demo
+### Demo 
 
 http://project1.thucnguyen.tk/
 
