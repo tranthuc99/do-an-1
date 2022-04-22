@@ -27,13 +27,38 @@ cd..
 Clone code và chạy trên local
 
 ```sh
-git clone https://github.com/tranthuc99/project2.git
-cd project2
+git clone https://github.com/tranthuc99/project1-django.git
+cd project1-django
 pip install -r requirements.txt
-py manage.py
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
 ```
 
-Nhập url: http://127.0.0.1:5000/ trên trình duyệt web!
+Nhập url: http://127.0.0.1:8000/ trên trình duyệt web!
+
+### Creating an admin user
+First we’ll need to create a user who can login to the admin site. Run the following command:
+```sh
+python manage.py createsuperuser
+```
+
+Enter your desired username and press enter.
+```
+Username: admin
+```
+
+You will then be prompted for your desired email address:
+```
+Email address: admin@example.com
+```
+
+The final step is to enter your password. You will be asked to enter your password twice, the second time as a confirmation of the first.
+```
+Password: **********
+Password (again): *********
+Superuser created successfully.
+```
 
 ### Báo cáo LaTeX
 https://www.overleaf.com/read/hhzhfvjhppys
